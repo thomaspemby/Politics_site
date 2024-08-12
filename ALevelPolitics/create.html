@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="create.css">
+  <title>Politics Article | Create</title>
+  <script src="main.js" defer></script>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+
+  <nav>
+    <h1 id="navtitle">Politics Article</h1>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./articles.html">Articles</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <br><br><br>
+
+  <div class="container">
+    <h1>Create Article</h1>
+    <form id="articleFormSubmit">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="thumbnail">Thumbnail Link:</label>
+        <input type="text" id="thumbnail" name="thumbnail">
+
+        <label for="ShortDesc">Short Description:</label>
+        <input type="text" id="ShortDesc" name="ShortDesc">
+
+        <label for="content" id="conenttitle">Content:</label>
+        <textarea id="content" name="content" rows="6" required></textarea>
+
+        <input type="submit" value="Submit" onclick="await CreateArticleForReview()">
+    </form>
+</div>
+
+  <br><br><br>
+
+  <!-- In your HTML file -->
+<footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Politics Article hub. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="./index.html">Home</a>
+        <a href="./articles.html">Articles</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
